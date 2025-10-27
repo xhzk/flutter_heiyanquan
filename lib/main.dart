@@ -18,8 +18,9 @@ class MainApp extends StatelessWidget {
           useMaterial3: false),
 
       // 路由
-      initialRoute: RouteNames.systemLogin,
+      initialRoute: RouteNames.systemSplash,
       getPages: RoutePages.list,
+      navigatorObservers: [RoutePages.observer],
     );
   }
 }
