@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heiyanquan/common/index.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 void main() {
@@ -11,11 +12,14 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      title: 'Flutter_heiyanquan',
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: false),
+
+      // 路由
+      initialRoute: RouteNames.systemLogin,
+      getPages: RoutePages.list,
     );
   }
 }
