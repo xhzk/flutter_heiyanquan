@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heiyanquan/common/routers/names.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';
@@ -15,9 +16,9 @@ class LoginPage extends GetView<LoginController> {
           const HelloWidget(),
           ElevatedButton(
             onPressed: () {
-              controller.onTap(DateTime.now().microsecondsSinceEpoch);
+              Get.toNamed(RouteNames.systemSplash);
             },
-            child: const Text("点击"),
+            child: const Text("跳转 splash"),
           )
         ],
       ),

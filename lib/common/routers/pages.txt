@@ -3,3 +3,7 @@
         name: RouteNames.systemLogin,
         page: () => const LoginPage(),
       ),
+      GetPage(
+        name: RouteNames.systemSplash,
+        page: () => const SplashPage(),
+      ),
