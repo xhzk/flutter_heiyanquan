@@ -26,5 +26,9 @@ class RoutePages {
       name: RouteNames.systemMain,
       page: () => const MainPage(),
     ),
+    GetPage(
+      name: RouteNames.stylesStylesIndex,
+      page: () => const StylesIndexPage(),
+    ),
   ];
 }
