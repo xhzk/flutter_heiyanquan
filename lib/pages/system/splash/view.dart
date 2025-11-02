@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heiyanquan/common/index.dart';
 import 'package:get/get.dart';
 
 import 'index.dart';
@@ -8,27 +9,8 @@ class SplashPage extends GetView<SplashController> {
 
   // 主视图
   Widget _buildView() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        // 文本标题
-        GetBuilder<SplashController>(
-          id: "splash_title",
-          builder: (_) {
-            return Center(
-              child: Text(controller.title),
-            );
-          },
-        ),
-
-        // 按钮
-        ElevatedButton(
-          onPressed: () {
-            controller.onTap(DateTime.now().microsecondsSinceEpoch);
-          },
-          child: const Text("立刻点击"),
-        )
-      ],
+    return Center(
+      child: Text("SplashPage - ${ConfigService.to.version}"),
     );
   }
 

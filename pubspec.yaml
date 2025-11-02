@@ -13,6 +13,9 @@ dependencies:
   # 状态管理
   get: ^4.7.2
 
+  # 获取包信息
+  package_info_plus: 8.3.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
