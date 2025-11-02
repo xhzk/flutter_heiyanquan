@@ -16,6 +16,9 @@ dependencies:
   # 获取包信息
   package_info_plus: 8.3.1
 
+  # 本地存储
+  shared_preferences: ^2.5.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
