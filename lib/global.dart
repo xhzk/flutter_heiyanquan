@@ -16,5 +16,7 @@ class Global {
       // 配置服务
       Get.putAsync<ConfigService>(() async => await ConfigService().init()),
     ]).whenComplete(() {});
+
+    Get.put<HttpService>(HttpService());
   }
 }
