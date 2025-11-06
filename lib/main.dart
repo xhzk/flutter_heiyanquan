@@ -15,10 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter_heiyanquan',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: false,
-      ),
+      // 样式
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      // 主题
+      themeMode:
+          ConfigService.to.isDarkModel ? ThemeMode.dark : ThemeMode.light,
 
       // 路由
       // initialRoute: RouteNames.systemSplash,
