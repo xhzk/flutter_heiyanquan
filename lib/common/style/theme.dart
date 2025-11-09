@@ -8,11 +8,13 @@ class AppTheme {
   static ThemeData light = ThemeData(
     colorScheme: MaterialTheme.lightScheme(),
     useMaterial3: false,
+    fontFamily: "Montserrat",
   );
 
   /// 暗色
   static ThemeData dark = ThemeData(
     colorScheme: MaterialTheme.darkScheme(),
     useMaterial3: false,
+    fontFamily: "Montserrat",
   );
 }
