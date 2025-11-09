@@ -1,0 +1,1 @@
+static const pMastercardPng = 'assets/images/p-mastercard.png';
