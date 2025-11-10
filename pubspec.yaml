@@ -23,6 +23,10 @@ dependencies:
   # 本地存储
   shared_preferences: ^2.5.3
 
+  # icon
+  flutter_svg: ^2.2.2
+  badges: 3.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

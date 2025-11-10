@@ -1,5 +1,9 @@
 
       GetPage(
+        name: RouteNames.stylesIcon,
+        page: () => const IconPage(),
+      ),
+      GetPage(
         name: RouteNames.stylesStylesIndex,
         page: () => const StylesIndexPage(),
       ),

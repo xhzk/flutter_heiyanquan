@@ -10,10 +10,16 @@ class StylesIndexPage extends GetView<StylesIndexController> {
   // 主视图
   Widget _buildView() {
     return Column(children: [
-// 文本
+      // 文本
       ListTile(
         onTap: () => Get.toNamed(RouteNames.stylesText),
         title: const Text("Text 文本"),
+      ),
+
+      // Icon 图标
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesIcon),
+        title: const TextWidget.body1("Icon 图标"),
       ),
 
       // 多语言
