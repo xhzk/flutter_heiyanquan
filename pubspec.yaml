@@ -26,6 +26,7 @@ dependencies:
   # icon
   flutter_svg: ^2.2.2
   badges: 3.1.2
+  extended_image: ^10.0.1
 
 dev_dependencies:
   flutter_test:
