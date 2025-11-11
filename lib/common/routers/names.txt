@@ -1,3 +1,4 @@
+static const stylesButton = '/styles_button';
 static const stylesIcon = '/styles_icon';
 static const stylesImage = '/styles_image';
 static const stylesStylesIndex = '/styles_styles_index';

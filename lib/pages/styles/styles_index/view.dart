@@ -28,6 +28,12 @@ class StylesIndexPage extends GetView<StylesIndexController> {
         title: const TextWidget.body1("Image 图片"),
       ),
 
+      // Button 按钮
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesButton),
+        title: const TextWidget.body1("Button 按钮"),
+      ),
+
       // 多语言
       ListTile(
         onTap: controller.onLanguageSelected,
