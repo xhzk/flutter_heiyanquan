@@ -1,0 +1,21 @@
+# step1
+# export FLUTTER_ROOT=~/dev/flutter  # on macOS or Linux
+
+# or
+
+# set FLUTTER_ROOT=~/dev/flutter     # on Windows
+
+# step2
+# dart pub global activate dartdoc
+
+# step3
+# dart pub global run dartdoc
+
+# step4
+# dart pub global activate dhttpd
+
+# step5
+# dart pub global run dhttpd --path doc/api --port 端口号
+
+dartdoc:
+  nodoc: ["lib/pages/**/*.dart"]
