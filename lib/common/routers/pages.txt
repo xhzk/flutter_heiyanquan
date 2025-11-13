@@ -12,6 +12,10 @@
         page: () => const ImagePage(),
       ),
       GetPage(
+        name: RouteNames.stylesInput,
+        page: () => const InputPage(),
+      ),
+      GetPage(
         name: RouteNames.stylesStylesIndex,
         page: () => const StylesIndexPage(),
       ),

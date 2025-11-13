@@ -46,5 +46,9 @@ class RoutePages {
       name: RouteNames.stylesButton,
       page: () => const ButtonPage(),
     ),
+    GetPage(
+      name: RouteNames.stylesInput,
+      page: () => const InputPage(),
+    ),
   ];
 }
