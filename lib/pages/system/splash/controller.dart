@@ -1,3 +1,4 @@
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
@@ -6,6 +7,7 @@ class SplashController extends GetxController {
   String title = "";
 
   _initData() {
+    FlutterNativeSplash.remove();
     update(["splash"]);
   }
 
