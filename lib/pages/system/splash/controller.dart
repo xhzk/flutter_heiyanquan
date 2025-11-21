@@ -12,10 +12,17 @@ class SplashController extends GetxController {
   void onTap() {}
 
   _jumpToPage() {
-    // 欢迎页
-    Future.delayed(const Duration(seconds: 1), () {
+    // 样式配置
+    if (ConfigService.to.isAlreadyOpen) {
       Get.offAllNamed(RouteNames.systemWelcome);
-    });
+    } else {
+      Get.offAllNamed(RouteNames.main);
+    }
+
+    // // 欢迎页
+    // Future.delayed(const Duration(seconds: 1), () {
+    //   Get.offAllNamed(RouteNames.systemWelcome);
+    // });
   }
 
   // @override

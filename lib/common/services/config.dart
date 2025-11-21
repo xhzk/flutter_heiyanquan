@@ -22,6 +22,9 @@ class ConfigService extends GetxService {
   final RxBool _isDarkModel = Get.isDarkMode.obs;
   bool get isDarkModel => _isDarkModel.value;
 
+  // 是否是首次打开
+  bool get isAlreadyOpen => Storage().getBool(Constants.storageAlreadyOpen);
+
   // 初始化
   Future<ConfigService> init() async {
     await getPlatform();
@@ -37,6 +40,11 @@ class ConfigService extends GetxService {
   // 获取包信息
   Future<void> getPlatform() async {
     _platform = await PackageInfo.fromPlatform();
+  }
+
+  // 标记已打开app
+  void setAlreadyOpen() {
+    Storage().setBool(Constants.storageAlreadyOpen, true);
   }
 
   // 切换 theme
