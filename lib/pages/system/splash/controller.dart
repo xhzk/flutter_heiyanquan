@@ -1,19 +1,21 @@
+import 'package:flutter_heiyanquan/common/index.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
 class SplashController extends GetxController {
   SplashController();
 
-  String title = "";
+  // _initData() {
+  //   update(["splash"]);
+  // }
 
-  _initData() {
-    FlutterNativeSplash.remove();
-    update(["splash"]);
-  }
+  void onTap() {}
 
-  void onTap(int ticket) {
-    title = "GetBuilder - > 点击了第 $ticket 个按钮";
-    update(["splash_title"]);
+  _jumpToPage() {
+    // 欢迎页
+    Future.delayed(const Duration(seconds: 1), () {
+      Get.offAllNamed(RouteNames.systemWelcome);
+    });
   }
 
   // @override
@@ -24,7 +26,9 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    _initData();
+    FlutterNativeSplash.remove();
+    // _initData();
+    _jumpToPage();
   }
 
   // @override
