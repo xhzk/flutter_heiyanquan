@@ -45,6 +45,24 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
+  # 图标
+  # 使用命令: dart run icons_launcher:create
+  icons_launcher: ^3.0.3
+
+# app 图标
+icons_launcher:
+  image_path: "assets/icons/ic_logo.png"
+  platforms:
+    android:
+      enable: true
+      notification_image: "assets/icons/ic_foreground.png"
+      # adaptive_background_color: '#ffffff'
+      adaptive_background_image: "assets/icons/ic_background.png"
+      adaptive_foreground_image: "assets/icons/ic_foreground.png"
+    ios:
+      enable: true
+
+
 flutter:
   uses-material-design: true
 
