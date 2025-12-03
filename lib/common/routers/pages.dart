@@ -30,10 +30,10 @@ class RoutePages {
       name: RouteNames.stylesStylesIndex,
       page: () => const StylesIndexPage(),
     ),
-    // GetPage(
-    //   name: RouteNames.stylesText,
-    //   page: () => const TextPage(),
-    // ),
+    GetPage(
+      name: RouteNames.stylesText,
+      page: () => const TextPage(),
+    ),
     // GetPage(
     //   name: RouteNames.stylesIcon,
     //   page: () => const IconPage(),
