@@ -42,10 +42,10 @@ class RoutePages {
       name: RouteNames.stylesImage,
       page: () => const ImagePage(),
     ),
-    // GetPage(
-    //   name: RouteNames.stylesButton,
-    //   page: () => const ButtonPage(),
-    // ),
+    GetPage(
+      name: RouteNames.stylesButton,
+      page: () => const ButtonPage(),
+    ),
     // GetPage(
     //   name: RouteNames.stylesInput,
     //   page: () => const InputPage(),
