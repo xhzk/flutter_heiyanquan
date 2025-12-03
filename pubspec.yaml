@@ -31,8 +31,12 @@ dependencies:
   # 主题
   adaptive_theme: ^3.7.2
 
-  # icon
+  # svg
   flutter_svg: ^2.2.2
+
+  # 图片缓存
+  cached_network_image: ^3.4.1
+
   badges: 3.1.2
   extended_image: ^10.0.1
 

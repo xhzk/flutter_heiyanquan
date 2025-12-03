@@ -37,6 +37,12 @@ class StylesIndexPage extends GetView<StylesIndexController> {
         onTap: () => Get.toNamed(RouteNames.stylesText),
         title: const Text("Text 文本"),
       ),
+
+      // Image 图片
+      ListTile(
+        onTap: () => Get.toNamed(RouteNames.stylesImage),
+        title: const Text("Image 图片"),
+      ),
     ]);
   }
 
