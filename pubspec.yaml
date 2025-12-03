@@ -7,7 +7,6 @@ environment:
   sdk: ^3.6.0
 
 dependencies:
-  dio: ^4.0.6
   flutter:
     sdk: flutter
 
@@ -22,6 +21,9 @@ dependencies:
 
   # 本地存储
   shared_preferences: ^2.5.3
+
+  # 网络请求
+  dio: ^5.9.0
 
   # icon
   flutter_svg: ^2.2.2
