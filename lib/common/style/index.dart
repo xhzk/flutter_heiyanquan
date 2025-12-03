@@ -1,9 +1,11 @@
 library style;
 
-export './lib_color_schemes.g.dart';
-export './theme.dart';
-export './theme_new.dart';
+export './border.dart';
 export './color.dart';
+export './elevation.dart';
+export './padding.dart';
 export './radius.dart';
+export './size.dart';
 export './space.dart';
 export './text.dart';
+export './theme.dart';
