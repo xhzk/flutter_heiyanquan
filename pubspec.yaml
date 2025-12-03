@@ -25,6 +25,9 @@ dependencies:
   # 网络请求
   dio: ^5.9.0
 
+  # 组件库
+  ducafe_ui_core: ^1.0.6
+
   # icon
   flutter_svg: ^2.2.2
   badges: 3.1.2
