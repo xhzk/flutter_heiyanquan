@@ -26,29 +26,29 @@ class RoutePages {
       name: RouteNames.systemMain,
       page: () => const MainPage(),
     ),
-    GetPage(
-      name: RouteNames.stylesStylesIndex,
-      page: () => const StylesIndexPage(),
-    ),
-    GetPage(
-      name: RouteNames.stylesText,
-      page: () => const TextPage(),
-    ),
-    GetPage(
-      name: RouteNames.stylesIcon,
-      page: () => const IconPage(),
-    ),
-    GetPage(
-      name: RouteNames.stylesImage,
-      page: () => const ImagePage(),
-    ),
-    GetPage(
-      name: RouteNames.stylesButton,
-      page: () => const ButtonPage(),
-    ),
-    GetPage(
-      name: RouteNames.stylesInput,
-      page: () => const InputPage(),
-    ),
+    // GetPage(
+    //   name: RouteNames.stylesStylesIndex,
+    //   page: () => const StylesIndexPage(),
+    // ),
+    // GetPage(
+    //   name: RouteNames.stylesText,
+    //   page: () => const TextPage(),
+    // ),
+    // GetPage(
+    //   name: RouteNames.stylesIcon,
+    //   page: () => const IconPage(),
+    // ),
+    // GetPage(
+    //   name: RouteNames.stylesImage,
+    //   page: () => const ImagePage(),
+    // ),
+    // GetPage(
+    //   name: RouteNames.stylesButton,
+    //   page: () => const ButtonPage(),
+    // ),
+    // GetPage(
+    //   name: RouteNames.stylesInput,
+    //   page: () => const InputPage(),
+    // ),
   ];
 }
