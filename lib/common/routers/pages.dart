@@ -26,10 +26,10 @@ class RoutePages {
       name: RouteNames.systemMain,
       page: () => const MainPage(),
     ),
-    // GetPage(
-    //   name: RouteNames.stylesStylesIndex,
-    //   page: () => const StylesIndexPage(),
-    // ),
+    GetPage(
+      name: RouteNames.stylesStylesIndex,
+      page: () => const StylesIndexPage(),
+    ),
     // GetPage(
     //   name: RouteNames.stylesText,
     //   page: () => const TextPage(),

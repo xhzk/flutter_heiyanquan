@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_heiyanquan/common/index.dart';
@@ -19,8 +20,7 @@ class ConfigService extends GetxService {
   Locale locale = PlatformDispatcher.instance.locale;
 
   // 主题
-  final RxBool _isDarkModel = Get.isDarkMode.obs;
-  bool get isDarkModel => _isDarkModel.value;
+  AdaptiveThemeMode themeMode = AdaptiveThemeMode.light;
 
   // 初始化
   Future<ConfigService> init() async {
@@ -40,24 +40,24 @@ class ConfigService extends GetxService {
   }
 
   // 切换 theme
-  Future<void> switchThemeModel() async {
-    _isDarkModel.value = !_isDarkModel.value;
-    Get.changeThemeMode(
-      _isDarkModel.value == true ? ThemeMode.dark : ThemeMode.light,
-    );
-    await Storage().setString(Constants.storageThemeCode,
-        _isDarkModel.value == true ? "dark" : "light");
-
-    // 重新载入视图，因为
-    // 1 有自定义颜色
-    // 2 有些视图被缓存
-    // Get.offAllNamed(RouteNames.stylesStylesIndex);
+  Future<void> setThemeMode(String themeKey) async {
+    switch (themeKey) {
+      case "light":
+        AdaptiveTheme.of(Get.context!).setLight();
+        break;
+      case "dark":
+        AdaptiveTheme.of(Get.context!).setDark();
+        break;
+      case "system":
+        AdaptiveTheme.of(Get.context!).setSystem();
+        break;
+    }
   }
 
   // 初始 theme
-  void initTheme() {
-    var themeCode = Storage().getString(Constants.storageThemeCode);
-    _isDarkModel.value = themeCode == "dark" ? true : false;
+  Future<void> initTheme() async {
+    final savedThemeMode = await AdaptiveTheme.getThemeMode();
+    themeMode = savedThemeMode ?? AdaptiveThemeMode.light;
   }
 
   // 初始语言

@@ -1,7 +1,8 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_heiyanquan/common/index.dart';
 import 'package:flutter_heiyanquan/global.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 
 Future<void> main() async {
   await Global.init();
@@ -13,27 +14,35 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Flutter_heiyanquan',
+    return AdaptiveTheme(
       // 样式
-      theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
-      // 主题
-      themeMode:
-          ConfigService.to.isDarkModel ? ThemeMode.dark : ThemeMode.light,
+      light: AppTheme.light,
+      dark: AppTheme.dark,
+      // 初始主题
+      initial: ConfigService.to.themeMode,
+      // 主题按钮
+      debugShowFloatingThemeButton: true,
 
-      // 路由
-      // initialRoute: RouteNames.systemSplash,
-      initialRoute: RouteNames.stylesStylesIndex,
-      getPages: RoutePages.list,
-      navigatorObservers: [RoutePages.observer],
+      builder: (theme, darkTheme) => GetMaterialApp(
+        title: 'Flutter_heiyanquan',
 
-      // 多语言
-      translations: Translation(), // 词典
-      localizationsDelegates: Translation.localizationsDelegates, // 代理
-      supportedLocales: Translation.supportedLocales, // 支持的语言种类
-      locale: ConfigService.to.locale, // 当前语言种类
-      fallbackLocale: Translation.fallbackLocale, // 默认语言种类
+        // 主题
+        theme: theme,
+        darkTheme: darkTheme,
+
+        // 路由
+        // initialRoute: RouteNames.systemSplash,
+        initialRoute: RouteNames.stylesStylesIndex,
+        getPages: RoutePages.list,
+        navigatorObservers: [RoutePages.observer],
+
+        // 多语言
+        translations: Translation(), // 词典
+        localizationsDelegates: Translation.localizationsDelegates, // 代理
+        supportedLocales: Translation.supportedLocales, // 支持的语言种类
+        locale: ConfigService.to.locale, // 当前语言种类
+        fallbackLocale: Translation.fallbackLocale, // 默认语言种类
+      ),
     );
   }
 }
