@@ -28,6 +28,9 @@ dependencies:
   # 组件库
   ducafe_ui_core: ^1.0.6
 
+  # 主题
+  adaptive_theme: ^3.7.2
+
   # icon
   flutter_svg: ^2.2.2
   badges: 3.1.2
@@ -45,6 +48,7 @@ flutter:
     - assets/images/
     - assets/svgs/
 
+  # 字体下载：https://fonts.google.com/
   fonts:
     - family: Montserrat
       fonts:
