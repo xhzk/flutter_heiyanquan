@@ -1,7 +1,5 @@
 # flutter_heiyanquan
 
-
-
 ```
 ├── lib
 │   ├── common // 通用功能
@@ -46,8 +44,6 @@
 
 ```
 
-
-
 ## 类名约定
 
 | 用途             | 前缀   | 后缀       | 举例             |
@@ -70,4 +66,3 @@
 | 私有               | _      |      | _findIndex    |
 | 视图拆分函数       | _build |      | _buildButtons |
 | 主视图函数（保留） |        |      | _buildView    |
-
