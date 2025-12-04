@@ -28,19 +28,7 @@
 │   │       └── index.dart
 │   ├── main.dart
 │   └── pages // 业务
-│       ├── goods // 商品
-│       ├── index.dart
-│       ├── msg // 消息
-│       ├── my // 我的
-│       ├── order // 订单
-│       ├── search // 搜索
-│       ├── styles // 样式调试
-│       └── system // 系统
-│           └── splash // 欢迎屏
-│               ├── controller.dart // 逻辑
-│               ├── index.dart
-│               ├── view.dart // 视图
-│               └── widgets // 组件
+│       └── styles // 样式调试
 
 ```
 
