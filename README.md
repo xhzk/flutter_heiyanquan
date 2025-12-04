@@ -28,7 +28,13 @@
 │   │       └── index.dart
 │   ├── main.dart
 │   └── pages // 业务
-│       └── styles // 样式调试
+│       ├── styles // 样式调试
+│       └── system // 项目
+│           └── splash // 欢迎屏
+│               ├── controller.dart // 逻辑
+│               ├── index.dart
+│               ├── view.dart // 视图
+│               └── widgets // 组件
 
 ```
 
