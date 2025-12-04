@@ -24,12 +24,8 @@
         page: () => const TextPage(),
       ),
       GetPage(
-        name: RouteNames.systemLogin,
-        page: () => const LoginPage(),
-      ),
-      GetPage(
-        name: RouteNames.systemMain,
-        page: () => const MainPage(),
+        name: RouteNames.stylesTextForm,
+        page: () => const TextFormPage(),
       ),
       GetPage(
         name: RouteNames.systemSplash,
